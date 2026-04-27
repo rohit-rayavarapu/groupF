@@ -1,0 +1,6 @@
+I have explored
+lm studio
+docker
+docker hub
+n8n
+lang-chain
