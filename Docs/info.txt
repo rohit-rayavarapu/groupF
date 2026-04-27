@@ -1,0 +1,9 @@
+Today I have explored new technologies like 
+
+-->N8N
+-->Line-graph
+-->Langflow
+
+-->LM Studio
+
+-->Ollama
