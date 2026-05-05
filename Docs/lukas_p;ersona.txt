@@ -33,7 +33,20 @@ The assistant filters the alerts, highlights a possible brute-force attack, expl
 Lukas follows the recommended investigation steps, checks whether any login attempt was successful, and marks the alert as “under investigation.”
 
 
+Objective:
+Help a junior analyst understand and investigate a high-risk alert.
 
+Actors:
+Junior SOC Analyst, AI Security Analyst Assistant, Dashboard System.
+
+Activities:
+Viewing alerts, asking the assistant for explanation, checking dashboard evidence, following investigation steps, updating alert status.
+
+Problem:
+The analyst receives too many alerts and is unsure which one should be handled first.
+
+Resolution:
+The AI assistant prioritizes the alert, explains the risk, provides evidence, and guides the analyst through the triage process.
 
 User Stories for Lukas Schneider
 
@@ -57,10 +70,12 @@ As a junior SOC analyst, I want to update the alert status, so that my team know
 
 Feature Identification
 Features derived from Lukas Schneider’s persona
-Feature	Reason
-Critical alert prioritisation	Helps Lukas focus on the most important alerts first.
-AI alert explanation	Helps him understand what the alert means.
-Suggested investigation steps	Guides him through the correct triage process.
-Dashboard evidence view	Helps him verify the alert using data.
-Alert status update	Allows him to mark alerts as new, investigating, resolved, or false positive.
-Source IP and destination IP analysis	Helps him identify suspicious traffic patterns.
+
+
+Feature	                                                                            Reason
+Critical alert prioritisation	                                        Helps Lukas focus on the most important alerts first.
+AI alert explanation	                                                Helps him understand what the alert means.
+Suggested investigation steps	                                        Guides him through the correct triage process.
+Dashboard evidence                                                      view	Helps him verify the alert using data.
+Alert status update	                                                    Allows him to mark alerts as new, investigating, resolved, or false positive.
+Source IP and destination IP analysis	                                Helps him identify suspicious traffic patterns.
