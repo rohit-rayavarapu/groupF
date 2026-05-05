@@ -7,3 +7,13 @@ Today I have explored new technologies like
 -->LM Studio
 
 -->Ollama
+I have explored
+lm studio
+docker
+docker hub
+n8n
+lang-chain
+
+
+
+123434
