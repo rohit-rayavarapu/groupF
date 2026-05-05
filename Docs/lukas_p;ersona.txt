@@ -1,0 +1,66 @@
+Persona 1: Junior SOC Analyst
+
+Name: Lukas Schneider
+Age: 24
+Role: Junior Security Operations Center Analyst
+Technical Skill Level: Intermediate
+
+Lukas Schneider is a junior SOC analyst working in a cybersecurity team in Berlin. 
+He recently completed his bachelor’s degree in IT security and has started his first full-time role in a Security Operations Center. 
+His daily work includes checking SIEM alerts, reviewing suspicious IP addresses, identifying possible brute-force attempts, and deciding whether alerts should be escalated. 
+Lukas understands basic networking, log analysis, phishing attacks, malware indicators, and firewall events, but he sometimes struggles with complex alert investigation and prioritisation. 
+He would use the AI Security Analyst Assistant to understand alerts in simple language and receive guided investigation steps. T
+he system helps him quickly identify high-risk alerts, check related dashboard evidence, and reduce mistakes caused by alert fatigue. 
+His main goal is to investigate alerts faster and become more confident in handling real security incidents.
+
+Feature he would love:
+AI-based alert explanation with recommended next investigation steps.
+
+Feature he may find confusing or unnecessary:
+Too many advanced dashboard filters without guidance, because he may not always know which filter is useful for each type of alert.
+
+
+
+
+
+Scenario 1: Lukas Schneider — Junior SOC Analyst
+
+Lukas starts his morning shift and opens the security dashboard. 
+He sees a large number of alerts from different sources such as firewall logs, IDS alerts, authentication logs, and network traffic data. 
+Since he is still a junior analyst, he is not immediately sure which alerts are dangerous and which ones are false positives. 
+He asks the AI Security Analyst Assistant to show the most critical alerts from the last 24 hours. 
+The assistant filters the alerts, highlights a possible brute-force attack, explains why the alert is risky, and shows related dashboard evidence such as repeated failed login attempts from the same source IP address. 
+Lukas follows the recommended investigation steps, checks whether any login attempt was successful, and marks the alert as “under investigation.”
+
+
+
+
+User Stories for Lukas Schneider
+
+User Story 1:
+As a junior SOC analyst, I want to view the most critical alerts first, so that I can focus on the most dangerous threats.
+
+User Story 2:
+As a junior SOC analyst, I want the AI assistant to explain why an alert is risky, so that I can understand the incident better.
+
+User Story 3:
+As a junior SOC analyst, I want to see related dashboard evidence for an alert, so that I can verify the AI explanation.
+
+User Story 4:
+As a junior SOC analyst, I want the assistant to suggest investigation steps, so that I can respond correctly to the alert.
+
+User Story 5:
+As a junior SOC analyst, I want to update the alert status, so that my team knows the alert is being investigated.
+
+
+
+
+Feature Identification
+Features derived from Lukas Schneider’s persona
+Feature	Reason
+Critical alert prioritisation	Helps Lukas focus on the most important alerts first.
+AI alert explanation	Helps him understand what the alert means.
+Suggested investigation steps	Guides him through the correct triage process.
+Dashboard evidence view	Helps him verify the alert using data.
+Alert status update	Allows him to mark alerts as new, investigating, resolved, or false positive.
+Source IP and destination IP analysis	Helps him identify suspicious traffic patterns.
