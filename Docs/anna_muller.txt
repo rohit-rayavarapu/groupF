@@ -1,0 +1,50 @@
+Persona 2: SOC Team Lead / Cybersecurity Manager
+Name: Anna Müller
+Age: 38
+Role: SOC Team Lead / Cybersecurity Manager
+Location: Munich, Germany
+Technical Skill Level: Advanced
+Anna Müller is a SOC team lead responsible for monitoring the overall security status of an organization in Germany. She manages a team of security analysts and needs to ensure that critical alerts are investigated quickly and correctly. Her daily responsibilities include reviewing incident trends, assigning alerts to analysts, checking unresolved cases, preparing reports, and communicating serious threats to management. Anna has strong experience with SIEM tools, incident response, MITRE ATT&CK, compliance requirements, and security dashboards. She does not want to manually inspect every individual log or low-priority alert because her main responsibility is to maintain a high-level view of the organization’s security posture. Anna would use the AI Security Analyst Assistant to get fast summaries of critical alerts, identify attack patterns, view dashboard evidence, and generate daily SOC reports. The system helps her reduce manual reporting work and make better decisions based on alert data. Her main goal is to improve response time, reduce alert fatigue in her team, and make the SOC workflow more organized.
+Feature she would love:
+Anna would love a dashboard-based daily SOC summary and incident report generation feature because it saves time and helps her communicate security status to management.
+Feature she may find confusing or unnecessary:
+Anna may find AI-generated final decisions without evidence unnecessary or risky because she needs the assistant to justify its reasoning using alert data, dashboard trends, and MITRE ATT&CK mapping.
+ 
+Scenario 2: Anna Müller Generates a Daily SOC Summary
+Anna begins her workday by checking the overall security posture of the organization. She needs to understand how many critical alerts occurred during the last 24 hours, which attack types were most common, and whether any serious incidents are still unresolved. Instead of manually checking multiple dashboards and reports, she asks the AI Security Analyst Assistant to generate a daily SOC summary.
+The assistant provides a clear overview of critical alerts, high-risk attack types, top attacking IP addresses, affected systems, unresolved incidents, and alert trends. It also links the summary to dashboard visualizations so Anna can verify the information. Anna uses the generated summary to assign unresolved alerts to analysts and prepare a short briefing for management. She also checks whether repeated attacks are coming from the same source IP range and decides whether additional blocking or investigation is needed.
+Objective:
+Help the SOC team lead quickly understand the organization’s security status.
+Actors:
+SOC Team Lead, AI Security Analyst Assistant, Dashboard System, SOC Analysts.
+Activities:
+Generating daily SOC summary, reviewing critical alerts, checking unresolved incidents, assigning alerts, preparing management report.
+Problem:
+The SOC team lead needs a fast and reliable overview without manually checking every dashboard.
+Resolution:
+The AI assistant summarizes the alerts, provides evidence, and generates a report for decision-making
+ 
+User Stories for Anna Müller
+User Story 1
+As a SOC team lead, I want to see a daily summary of critical alerts, so that I can understand the organization’s security situation quickly.
+User Story 2
+As a SOC team lead, I want to view attack trends in dashboards, so that I can identify repeated threats and patterns over time.
+User Story 3
+As a SOC team lead, I want the AI assistant to generate incident reports, so that I can save time during management reporting.
+User Story 4
+As a SOC team lead, I want to view unresolved alerts, so that I can assign them to analysts and ensure nothing is ignored.
+User Story 5
+As a SOC team lead, I want the assistant to explain its recommendations with evidence, so that I can trust the system before making decisions.
+User Story 6
+As a SOC team lead, I want to view analyst workload, so that I can distribute investigation tasks fairly among the SOC team.
+ 
+Features derived from Anna Müller’s persona
+ 
+Feature	Reason
+Daily SOC summary	Helps Anna quickly understand the overall security situation.
+Incident report generation	Saves time when preparing reports for management.
+Attack trend dashboard	Helps her identify repeated threats over time.
+Unresolved alert view	Helps her assign pending incidents to analysts.
+Analyst workload dashboard	Helps her manage the SOC team efficiently.
+Evidence-based AI recommendations	Helps her trust the assistant’s output before taking action.
+ 
