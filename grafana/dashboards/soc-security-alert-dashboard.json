@@ -1,0 +1,109 @@
+{
+  "id": null,
+  "uid": "soc-security-alert-dashboard",
+  "title": "SOC Security Alert Dashboard",
+  "tags": ["soc", "cybersecurity", "alerts"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "id": 1,
+      "type": "stat",
+      "title": "Total Alerts",
+      "gridPos": { "h": 6, "w": 12, "x": 0, "y": 0 },
+      "datasource": { "type": "postgres", "uid": "postgres" },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT COUNT(*) AS total_alerts FROM alerts;",
+          "datasource": { "type": "postgres", "uid": "postgres" }
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "value",
+        "graphMode": "none"
+      }
+    },
+    {
+      "id": 2,
+      "type": "stat",
+      "title": "Critical Alerts",
+      "gridPos": { "h": 6, "w": 12, "x": 12, "y": 0 },
+      "datasource": { "type": "postgres", "uid": "postgres" },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT COUNT(*) AS critical_alerts FROM alerts WHERE severity = 'Critical';",
+          "datasource": { "type": "postgres", "uid": "postgres" }
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "value",
+        "graphMode": "none"
+      }
+    },
+    {
+      "id": 3,
+      "type": "barchart",
+      "title": "Alerts by Severity",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 6 },
+      "datasource": { "type": "postgres", "uid": "postgres" },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT severity, COUNT(*) AS alert_count FROM alerts GROUP BY severity ORDER BY alert_count DESC;",
+          "datasource": { "type": "postgres", "uid": "postgres" }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "barchart",
+      "title": "Alerts by Attack Type",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 6 },
+      "datasource": { "type": "postgres", "uid": "postgres" },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT attack_type, COUNT(*) AS alert_count FROM alerts GROUP BY attack_type ORDER BY alert_count DESC;",
+          "datasource": { "type": "postgres", "uid": "postgres" }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "table",
+      "title": "Critical Alert Details",
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 14 },
+      "datasource": { "type": "postgres", "uid": "postgres" },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT alert_id, timestamp, source_ip, destination_ip, attack_type, severity, status, description FROM alerts WHERE severity = 'Critical' ORDER BY timestamp DESC;",
+          "datasource": { "type": "postgres", "uid": "postgres" }
+        }
+      ]
+    }
+  ]
+}
