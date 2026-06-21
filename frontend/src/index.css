@@ -1,13 +1,22 @@
 * {
   box-sizing: border-box;
 }
- 
-body {
+
+html,
+body,
+#root {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f7fb;
+  width: 100%;
+  min-height: 100%;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #eef2f7;
+  color: #0f172a;
 }
- 
+
+body {
+  overflow-x: hidden;
+}
+
 button,
 input {
   font-family: inherit;

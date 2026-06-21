@@ -1,1 +1,10 @@
-Today me and my teammate had a productive day working on our project. We started by setting clear goals for the day. 
+Today me and my teammate had a productive day working on our project. We started by setting clear goals for the day. We have decided on our project and created persona's according to the requirement and below is the persona created by me.
+
+
+AI SECURITY ANALYST ASSISTANT(TITLE PROJECT)
+
+The AI Security Analyst Assistant for Alert Triage and Dashboard Visualization is designed to support cybersecurity teams by reducing manual alert investigation work. The system combines AI assistance, alert data, dashboard visualization, and incident reporting. Junior analysts can use the assistant to understand alerts, follow investigation steps, and update alert status. SOC team leads can use the system to view daily summaries, track unresolved incidents, identify attack trends, and generate reports. The final product improves alert triage, reduces alert fatigue, and supports faster cybersecurity decision-making.
+
+
+
+For our project, we identified two main personas: Lukas Schneider, a junior SOC analyst, and Anna Müller, a SOC team lead. Lukas needs support in understanding alerts, prioritizing threats, and following investigation steps. Anna needs high-level visibility, daily SOC summaries, unresolved alert tracking, and incident reports. Based on these personas, we created realistic scenarios showing how each user would interact with the AI Security Analyst Assistant. From these scenarios, we developed user stories and identified the main features of the system, including alert prioritisation, AI alert explanation, dashboard evidence, investigation guidance, status updates, and report generation. This approach ensures that the project features are based on real user needs instead of assumptions only.
